@@ -1,0 +1,11 @@
+/* src/App.css */
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+

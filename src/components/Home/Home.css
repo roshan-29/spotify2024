@@ -1,0 +1,11 @@
+.home-layout {
+    flex-grow: 1;
+    /* Takes up remaining space */
+    height: 539px;
+    background-color: #2828288b;
+    border-radius: 10px;
+    overflow: scroll;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    
+}

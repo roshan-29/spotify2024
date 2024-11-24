@@ -1,0 +1,195 @@
+.library-layout {
+    height: 539px;
+    background-color: #2828288b;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.library-header {
+    width: 95%;
+    height: 50px;
+    margin-left: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library-header-left {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+.library-logo {
+    color: #B3B3B3;
+    height: 27px;
+    width: 27px;
+}
+
+.library-title {
+    white-space: nowrap;
+    font-size: 20px;
+    color: #B3B3B3;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.library-header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.plus,
+.arrrow {
+    height: 22px;
+    width: 22px;
+    color: #B3B3B3;
+}
+
+.library-filter {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+.library-options {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.library-option1 {
+    height: 25px;
+    background-color: #555151;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.spotify-dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-toggle i {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle:hover i {
+    transform: rotate(225deg);
+}
+
+.dropdown-menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #282828;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+    padding: 8px 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu {
+    width: 180px;
+    margin-bottom: 8px;
+}
+
+.menu-header {
+    font-size: 12px;
+    color: #b3b3b3;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu li {
+    padding: 10px 16px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu li:hover {
+    background-color: #404040;
+}
+
+.dropdown-menu li:not(:last-child) {
+    border-bottom: 1px solid #333;
+}
+
+.view-icon {
+    margin-right: 10px;
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+}
+
+.table-headings {
+    display: flex;
+    flex-direction: row;
+    gap: 37%;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.table-line {
+    margin-left: 15px;
+    margin-right: 15px;
+   
+    height: 0.2px;
+    background-color: #5c55555d;
+
+}
+
+.lib-playlist {
+    overflow: auto;
+    max-height: calc(539px - 150px);
+    /* Adjust based on your header and filter heights */
+    padding: 10px;
+    /* Optional */
+}
+
+
+.selected-playlist {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+}

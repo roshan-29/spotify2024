@@ -1,0 +1,153 @@
+/* src/components/Player/Player.css */
+.player {
+
+
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+
+    flex-direction: row;
+
+
+}
+
+.player-left {
+
+    width: 470px;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+
+
+.track-image {
+    margin-left: -2px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.track-title-info {
+    margin-top: 10px;
+
+    padding-left: 10px;
+    display: flex;
+
+
+    flex-direction: column;
+
+}
+
+.track-title {
+    font-size: 15px;
+    font-weight: 650;
+    color: white;
+}
+
+.track-info {
+    margin-top: -3px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #B3B3B3;
+}
+
+.track-status {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.plus-icon {
+    opacity: 1;
+    transform: scale(1);
+    color: #B3B3B3;
+}
+
+.check-icon {
+    opacity: 1;
+    transform: scale(1);
+    color: #1DB954;
+}
+
+
+.player-center {
+
+
+    width: 765px;
+    display: flex;
+    flex-direction: column;
+}
+
+.track-options {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    margin-left: 175px;
+}
+
+.track-option-icon {
+    margin-top: 5px;
+    height: 21px;
+    width: 20px;
+    color: #B3B3B3;
+}
+
+.track-play-icon {
+    align-items: center;
+
+    height: 32px;
+    width: 35px;
+}
+
+
+.track-time-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.progress-bar {
+    margin-top: 8px;
+    width: 520px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #b3b3b381;
+}
+
+.current-time,
+.total-time {
+
+    font-size: 13px;
+    color: #B3B3B3;
+    font-weight: 500;
+}
+
+.player-right {
+    margin-right:9px ;
+    margin-top: 14px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.volume-bar {
+    margin-top: 14px;
+    width: 85px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #b3b3b381;
+}
+
+.volume{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+ 
+}

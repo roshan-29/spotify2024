@@ -1,0 +1,59 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    height: calc(100vh - 70px);
+    margin-bottom: -10px;
+}
+
+.library {
+    transition: width 0.2s ease;
+
+
+}
+
+.home {
+
+    flex-grow: 1;
+    overflow: auto;
+    /* Allow overflow to scroll if content is too large */
+    min-width: 350px;
+
+}
+
+.resizer {
+    opacity: 0;
+    width: 1px;
+    /* Adjust width if needed */
+    background-color: rgb(255, 255, 255);
+    cursor: ew-resize;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    /* Ensure it spans the full height of the dashboard container */
+    user-select: none;
+    /* Prevent text selection */
+}
+
+
+.resizer {
+margin-top:66px;
+height: 530px;
+    width: 1px;
+    cursor: col-resize;
+    /* Default cursor */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: gray;
+}
+
+.dashboard-container:hover .resizer {
+    opacity: 1;
+    cursor: grab;
+    /* Hand grab style */
+}
+
+.resizer:active {
+    cursor: grab;
+    /* Hand grabbing style while dragging */
+}

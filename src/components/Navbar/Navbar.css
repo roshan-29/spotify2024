@@ -1,0 +1,295 @@
+.navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+  
+    margin: -8px -8px;
+    height: 60px;
+
+}
+
+.spotify-logo-container {
+    width: 485px;
+
+}
+
+.nav-left-logo {
+
+    padding: 15.5px 19px;
+    width: 33px;
+    height: 32.3px;
+}
+
+.nav-home-search {
+
+    margin-top: 9px;
+    margin-left: 85px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 10px;
+
+}
+
+.home-nav {
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #2C2C2C;
+    position: relative;
+    /* Ensure it is positioned */
+    z-index: -1;
+    /* Lower z-index to allow the image to be on top */
+}
+
+.home-logo {
+    color: #B3B3B3;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    /* Set the image to be absolute */
+    top: 11px;
+    /* Adjust to center the image vertically within the div */
+    left: 10.5px;
+    /* Adjust to center the image horizontally within the div */
+    z-index: 10;
+    /* Make sure it's on top of the div */
+
+}
+
+
+.search {
+    color: #B3B3B3;
+    height: 28px;
+    width: 28px;
+
+
+    position: absolute;
+    /* Set the image to be absolute */
+    top: 12px;
+    /* Adjust to center the image vertically within the div */
+    left: 85px;
+    /* Adjust to center the image horizontally within the div */
+    z-index: 10;
+    /* Make sure it's on top of the div */
+
+}
+
+/* Placeholder styling */
+input::placeholder {
+    font-size: 15px;
+    /* Font size for the placeholder text */
+    font-weight: 500;
+    /* Font weight for the placeholder text */
+    background-color: #2C2C2C;
+    /* Color for the placeholder text */
+}
+
+/* Input field styling */
+input {
+    width: 468px;
+    height: 48px;
+    padding-top: 7px;
+    /* Use margin to move the input field down */
+    padding-left: 60px;
+    /* Default left padding for the input */
+    border: 2px so #2C2C2C;
+    /* Default border color */
+    font-size: 15px;
+    /* Font size for the input text */
+    font-weight: 400;
+    /* Font weight for normal text */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color */
+    background-color: #2C2C2C;
+    border-radius: 26px;
+    border: solid #2C2C2C;
+}
+
+/* Styling when the input is focused */
+input:focus {
+    border-color: white;
+
+    font-weight: 500;
+
+}
+
+
+input:focus::placeholder {
+    color: #ffffff;
+
+}
+
+input::-ms-clear {
+    display: none;
+    /* For Internet Explorer and Edge */
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+    /* For WebKit browsers (Chrome, Safari, etc.) */
+}
+
+.clear-button {
+    position: absolute;
+    right: 10px;
+    top: 51%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #B3B3B3;
+
+}
+
+.line-vertical {
+    border-left: 2px solid #B3B3B3;
+    ;
+    /* Thickness and color of the line */
+    height: 20px;
+    /* Height of the vertical line */
+    position: absolute;
+    /* Set the image to be absolute */
+    top: 18px;
+    /* Adjust to center the image vertically within the div */
+    left: 455px;
+    /* Adjust to center the image horizontally within the div */
+    z-index: 10;
+    /* Make sure it's on top of the div */
+}
+
+.right-navbar {
+    padding: 9px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+.explore-premium {
+    margin-top: 2px;
+    background-color: white;
+    width: 115px;
+    height: 20px;
+    border-radius: 25px;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 15px;
+
+    white-space: nowrap;
+
+}
+
+.install-app {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 18px;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+.install-icon {
+    margin-top: 3px;
+    transform: scale(1.4);
+
+}
+
+.notification-icon {
+    padding: 8.1px 1px;
+    transform: scale(1.2);
+    color: #B3B3B3;
+
+}
+
+
+.profile-circle {
+    margin: -10px 5.9px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #2C2C2C;
+    position: relative;
+    /* Ensure it is positioned */
+    z-index: -1;
+    /* Lower z-index to allow the image to be on top */
+
+}
+
+.profile-image {
+    padding: 7px;
+    width: 33px;
+    height: 33px;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+    }
+
+    .spotify-logo-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-home-search {
+        margin: 10px auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .home-nav {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-logo,
+    .search {
+        height: 22px;
+        width: 22px;
+        top: 8px;
+        left: 8px;
+    }
+
+    input {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .line-vertical {
+        display: none;
+    }
+
+    .right-navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 15px;
+    }
+
+    .explore-premium,
+    .install-app {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    .profile-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-image {
+        width: 30px;
+        height: 30px;
+    }
+}
+
